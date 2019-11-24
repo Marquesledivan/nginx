@@ -9,4 +9,9 @@ stages:
     steps:
     - runScriptConfig:
         image: busybox
-        shellScript: kubectl get pods
+        shellScript: ls
+stages:
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./nginx/deployment.yaml
