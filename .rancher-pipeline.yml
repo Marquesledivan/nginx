@@ -9,4 +9,4 @@ stages:
     steps:
     - runScriptConfig:
         image: busybox
-        shellScript: echo ledivan
+        shellScript: kubectl get pods
