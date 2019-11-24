@@ -1,5 +1,4 @@
 # example
-def IMAGE_VERSION = "$BUILD_NUMBER"
 
 stages:
   - name: Build something
@@ -11,7 +10,7 @@ stages:
     steps:
     - runScriptConfig:
         image: busybox
-        shellScript: echo $IMAGE_VERSION
+        shellScript: echo "$BUILD_NUMBER"
 stages:
 - name: Deploy
   steps:
