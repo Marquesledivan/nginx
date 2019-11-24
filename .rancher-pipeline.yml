@@ -15,3 +15,5 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./nginx/deployment.yaml
+      path: ./nginx/svc.yaml
+
