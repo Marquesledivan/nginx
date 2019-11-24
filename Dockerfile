@@ -1,4 +1,4 @@
 FROM golang:1.11
 EXPOSE 80
-COPY . /usr/local/bin/
-CMD ["bash"]
+COPY ./bin/hello-server /usr/local/bin/
+CMD ["hello-server"]
