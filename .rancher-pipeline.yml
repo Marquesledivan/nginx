@@ -10,7 +10,7 @@ stages:
     steps:
     - runScriptConfig:
         image: busybox
-        shellScript: echo "$BUILD_NUMBER"
+        shellScript: echo ${CICD_EXECUTION_SEQUENCE}
 stages:
 - name: Deploy
   steps:
